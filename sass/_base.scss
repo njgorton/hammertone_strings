@@ -1,5 +1,9 @@
 // COLORS
-$color-white-light: #FFFFFF;
+$color-white-light: #FAFAFA;
+$color-white-dark: #EAE5DE;
+$color-grey: dimgrey;
+$color-brown:  #23231A;
+$color-callOut: orangered;
 
 
 // FONTS
@@ -39,13 +43,13 @@ html {
 }
 
 body {  
-    //background-color: $color-dark * .5;
+    background-color: $color-white-light;
     max-width: 1800px;
     margin: 0 auto;
     overflow-x: hidden;
 }
 
-// ::selection {
-//     background-color: $color-orange;
-//     color: $color-white-dark;
-// }
+::selection {
+    background-color: $color-brown;
+    color: $color-white-light;
+}

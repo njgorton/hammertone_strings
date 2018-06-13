@@ -12,24 +12,155 @@
     <title>Hammertone Strings</title>
 </head>
 <body>
+
+
 <!-- ============================HEADER================================ -->
-    <header id="header">
-        <img id="header-img" src="#" alt="">
-        <div class="headingBox">
+    <header class="header" id="header">
+        <nav class="navigation" id="nav-bar">
+            <div class="navigation__logo">
+                <img src="img/hammer.svg" class="navigation__hammer">
+                <img src="img/audio-wave.svg" class="navigation__sound">
+            </div> 
+
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#" class="navigation__link nav-link">About</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link nav-link">Videos</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link nav-link">Custom Order</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">Licensed Dealers</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">Store</a></li>
+            </ul>
+        </nav>
+
+        <div class="header__title">
+            <div class="logo">
+                <img id="header-img" src="img/hammer.svg" class="hammer">
+                <img src="img/audio-wave.svg" class="sound">
+            </div> 
+
             <h1>Hammertone Strings</h1>
-            <h2>Artisan stringed instruments<br>...for the discerning musician</h2>    
+            <hr>            
+            <h2>artisan stringed instruments<br>...for the discerning musician</h2> 
+            
+            <form method="get" action="https://www.freecodecamp.com/email-submit" class="form" id="form">
+                <label class="form__label" for="email">Sign up for our monthly newsletter to get exclusive offers, discounts, and give-aways!</label>
+                <div class="form__inputBox">
+                    <input type="email" class="form__email" id="email" name="email" placeholder="Enter your email address">
+                    <input type="submit" class="form__submit" id="submit" name="email" value="Subscribe">
+                </div>
+            </form>            
         </div>
     </header>
 
 
+<!-- ===========================PRODUCTS================================ --> 
+    <main>
+        <section class="products">
+
+            <h2 class="products__heading-primary">What's Your Sound?</h2>
+            <h3 class="products__heading-secondary">Browse, compare, and explore our full product line</h3>
+            <hr class="products__hr">
+
+            <div class="products__grid">
+                <div class="card">
+                    <img src="img/acoustic.jpg" class="card__img">
+
+                    <div class="card__details">
+                        <h4 class="card__heading">Acoustic</h4>
+
+                        <p class="card__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nemo iure qui earum reiciendis nesciunt.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="img/electric.jpg" class="card__img">
+
+                    <div class="card__details">
+                        <h4 class="card__heading">Electric</h4>
+
+                        <p class="card__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nemo iure qui earum reiciendis nesciunt.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="img/mandolin.jpg" class="card__img">
+
+                    <div class="card__details">
+                        <h4 class="card__heading">Folk/Traditional</h4>
+
+                        <p class="card__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nemo iure qui earum reiciendis nesciunt.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="img/cello.jpg" class="card__img">
+
+                    <div class="card__details">
+                        <h4 class="card__heading">Orchestral</h4>
+
+                        <p class="card__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nemo iure qui earum reiciendis nesciunt.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- ===========================CUSTOM================================ -->
+        <section class="custom">
+            <div class="custom__container">
+                <img src="img/luthier.jpg" alt="" class="custom__img">
+
+                <div class="custom__content">
+                    <h2 class="custom__heading-primary">Make It Your Own</h2>
+
+                    <h3 class="custom__heading-secondary">Custom order from our wide selection of materials and designs, to find that perfect feel and sound!</h3>
+
+                    <hr class="custom__hr">
+
+                    <ul class="custom__list">
+                        <li class="custom__item">Lorem ipsum dolor sit amet</li>
+                        <li class="custom__item">Lorem ipsum dolor sit amet</li>
+                        <li class="custom__item">Lorem ipsum dolor sit amet</li>
+                        <li class="custom__item">Lorem ipsum dolor sit amet</li>
+                        <li class="custom__item">Lorem ipsum dolor sit amet</li>
+                    </ul>
+                    
+                    <button class="custom__btn">Get Started Today!</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+<!-- ===========================FOOTER================================ -->
+<footer class="footer">
+    <div>Icons made by <a href="https://www.flaticon.com/authors/scott-de-jonge" title="Scott de Jonge">Scott de Jonge</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
+    <div>Icons made by <a href="https://www.flaticon.com/authors/anton-saputro" title="Anton Saputro">Anton Saputro</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
+    <div>Icons made by <a href="https://www.flaticon.com/authors/nikita-golubev" title="Nikita Golubev">Nikita Golubev</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
+    <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
+    <div>Icons made by <a href="https://www.flaticon.com/authors/nikita-golubev" title="Nikita Golubev">Nikita Golubev</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
+    <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+</footer>
 
 
 <!-- ===========================SCRIPTS================================ -->
     <!-- <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="app.js"></script>
-    
+
     <!-- For FCC's User Story Test Suite: -->
-    <script>src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"</script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>

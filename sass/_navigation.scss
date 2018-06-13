@@ -1,0 +1,48 @@
+.navigation {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: $color-brown;
+    color: $color-white-dark;
+    width: 100%;
+    max-width: 1800px; // body max-width
+    padding: 2rem 5rem;
+    display: flex;
+    justify-content: space-between;
+    
+
+    &__logo {
+        display: flex;
+        cursor: pointer;
+    }
+    
+    &__hammer {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    &__sound {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    &__list {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        margin: auto 2rem;
+    }
+
+    &__link {
+
+        &:link,
+        &:visited {
+            text-decoration: none;
+            color: $color-white-light;
+            font-size: 2.5rem;
+        }
+    }
+}
