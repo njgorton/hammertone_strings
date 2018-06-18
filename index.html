@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
     <!-- <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Unicase|Montserrat:300,400" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css"> 
     
@@ -17,17 +18,16 @@
 <!-- ============================HEADER================================ -->
     <header class="header" id="header">
         <nav class="navigation" id="nav-bar">
-            <div class="navigation__logo">
+            <div class="navigation__logo" tabindex="0">
                 <img src="img/hammer.svg" class="navigation__hammer">
                 <img src="img/audio-wave.svg" class="navigation__sound">
             </div> 
 
             <ul class="navigation__list">
-                <li class="navigation__item"><a href="#" class="navigation__link nav-link">About</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link nav-link">Videos</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link nav-link">Store</a></li>
                 <li class="navigation__item"><a href="#" class="navigation__link nav-link">Custom Order</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link nav-link">Demos</a></li>
                 <li class="navigation__item"><a href="#" class="navigation__link">Licensed Dealers</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link">Store</a></li>
             </ul>
         </nav>
 
@@ -55,14 +55,13 @@
 <!-- ===========================PRODUCTS================================ --> 
     <main>
         <section class="products">
-
             <h2 class="products__heading-primary">What's Your Sound?</h2>
             <h3 class="products__heading-secondary">Browse, compare, and explore our full product line</h3>
             <hr class="products__hr">
 
             <div class="products__grid">
-                <div class="card">
-                    <img src="img/acoustic.jpg" class="card__img">
+                <div class="card" tabindex="0">
+                    <img src="img/acoustic.jpg" alt="Close-up of an acoustic guitar." class="card__img">
 
                     <div class="card__details">
                         <h4 class="card__heading">Acoustic</h4>
@@ -73,8 +72,8 @@
                     </div>
                 </div>
 
-                <div class="card">
-                    <img src="img/electric.jpg" class="card__img">
+                <div class="card" tabindex="0">
+                    <img src="img/electric.jpg" alt="Close-up of an electric guitar." class="card__img">
 
                     <div class="card__details">
                         <h4 class="card__heading">Electric</h4>
@@ -85,8 +84,8 @@
                     </div>
                 </div>
 
-                <div class="card">
-                    <img src="img/mandolin.jpg" class="card__img">
+                <div class="card" tabindex="0">
+                    <img src="img/mandolin.jpg" alt="Close-up of a mandolin." class="card__img">
 
                     <div class="card__details">
                         <h4 class="card__heading">Folk/Traditional</h4>
@@ -97,8 +96,8 @@
                     </div>
                 </div>
 
-                <div class="card">
-                    <img src="img/cello.jpg" class="card__img">
+                <div class="card" tabindex="0">
+                    <img src="img/cello.jpg" alt="Close-up of a cello." class="card__img">
 
                     <div class="card__details">
                         <h4 class="card__heading">Orchestral</h4>
@@ -113,8 +112,8 @@
 
 <!-- ===========================CUSTOM================================ -->
         <section class="custom">
-            <div class="custom__container">
-                <img src="img/luthier.jpg" alt="" class="custom__img">
+            <div class="custom__orders-container">
+                <img src="img/luthier.jpg" alt="Two hand planers on the face of an unfinished violin." class="custom__img">
 
                 <div class="custom__content">
                     <h2 class="custom__heading-primary">Make It Your Own</h2>
@@ -124,14 +123,69 @@
                     <hr class="custom__hr">
 
                     <ul class="custom__list">
-                        <li class="custom__item">Lorem ipsum dolor sit amet</li>
-                        <li class="custom__item">Lorem ipsum dolor sit amet</li>
-                        <li class="custom__item">Lorem ipsum dolor sit amet</li>
-                        <li class="custom__item">Lorem ipsum dolor sit amet</li>
-                        <li class="custom__item">Lorem ipsum dolor sit amet</li>
+                        <li class="custom__item">
+                            <div class="custom__iconBox">
+                                <img src="img/design.svg" class="custom__icon">
+                            </div>
+                            <span class="custom__span">Extensive custom design options with help from our award-winning design guide web app.</span>
+                        </li>
+
+                        <li class="custom__item">
+                            <div class="custom__iconBox">
+                                <img src="img/lumber.svg" class="custom__icon">
+                            </div>
+                            <span class="custom__span">Choose from a wide list of our own sustainably and ethically sourced lumber and hardware materials.</span>
+                        </li>
+
+                        <li class="custom__item">
+                            <div class="custom__iconBox">
+                                <img src="img/color-palette.svg" class="custom__icon">
+                            </div>
+                            <span class="custom__span">Pick your dream finish and stains for every part of your custom instrument.</span>
+                        </li>
+
+                        <li class="custom__item">
+                            <div class="custom__iconBox">
+                                <img src="img/chisel.svg" class="custom__icon">
+                            </div>
+                            <span class="custom__span">Now it's our turn, where our industry-leading luthiers craft your instrument to your own specifications, turning your ideas into reality!</span>
+                        </li>
+
+                        <li class="custom__item">
+                            <div class="custom__iconBox">
+                                <img src="img/shipping.svg" class="custom__icon">
+                            </div>
+                            <span class="custom__span">We guarantee your order will be carefully finished and safely shipped to your home by the given due date (usually about 6 months).</span>
+                        </li>
                     </ul>
                     
                     <button class="custom__btn">Get Started Today!</button>
+                </div>
+            </div>
+
+            <div class="custom__story-container">
+                <div class="custom__story-content">
+                    <p class="custom__story">"For a long time I'd had some ideas for a very specific guitar. I wanted to get that distinguishing tone, y'know, that special flavor. Well thanks to Hammertone Strings, I was able to turn those ideas into something I could actually play, and it's even better than I imagined. I'm just totally stoked!"</p>
+
+                    <p class="custom__story-author">Edward Espinosa,<br>-guitarist for The Pelican's Triumph</p>
+                </div>
+
+                <img src="img/customer.jpg" alt="Well dressed and barefooted man, playing a well-crafted guitar." class="custom__story-img">
+            </div>
+        </section>
+
+
+<!-- ===========================DEMOS================================ -->
+        <section class="demos">
+            <div class="demos__heading">
+                <h2>Demos</h2>
+            </div>
+
+            <div class="demos__container">
+                <div class="demos__videoCell">
+                    <h3 class="demos__videoHeading">Tour our production shop!</h3>
+
+                    <iframe class="demos__video" id="video" width="560" height="315" src="https://www.youtube.com/embed/I62gjjWxPIQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
             </div>
         </section>
@@ -141,17 +195,9 @@
 
 <!-- ===========================FOOTER================================ -->
 <footer class="footer">
-    <div>Icons made by <a href="https://www.flaticon.com/authors/scott-de-jonge" title="Scott de Jonge">Scott de Jonge</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+    <!-- flaticon atrributions -->
+    <div>Icons made by <a href="https://www.flaticon.com/authors/scott-de-jonge" title="Scott de Jonge">Scott de Jonge</a>, <a href="https://www.flaticon.com/authors/anton-saputro" title="Anton Saputro">Anton Saputro</a>, <a href="http://www.freepik.com" title="Freepik">Freepik</a>, and <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a>,  from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> and is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
 
-    <div>Icons made by <a href="https://www.flaticon.com/authors/anton-saputro" title="Anton Saputro">Anton Saputro</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-
-    <div>Icons made by <a href="https://www.flaticon.com/authors/nikita-golubev" title="Nikita Golubev">Nikita Golubev</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-
-    <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-
-    <div>Icons made by <a href="https://www.flaticon.com/authors/nikita-golubev" title="Nikita Golubev">Nikita Golubev</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-
-    <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
 </footer>
 
 

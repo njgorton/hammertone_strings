@@ -1,0 +1,44 @@
+.demos {
+    height: 100vh;
+    background: $color-white-dark;
+    padding: 5rem;
+    padding-bottom: 10rem;
+
+    &__heading {
+        margin-bottom: 3rem;
+
+        h2 {
+            font-size: 4.5rem;
+            font-family: $font-heading;
+            text-align: center;
+            color: $color-brown;
+            text-shadow: 5px 5px 10px rgba(0,0,0, .3);
+        }
+    }
+
+    &__container {
+        //height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        //align-items: center;
+    }
+
+    &__videoCell {
+       background: $color-white-light;
+       padding: 3.5rem;
+       border-radius: 10px;
+    }
+
+    &__videoHeading {
+        text-align: center;
+        font-size: 2.5rem;
+        color: $color-grey;
+        margin-bottom: 2rem;
+        text-shadow: 2px 2px 4px rgba(0,0,0, .1);
+    }
+
+    &__video {
+
+    }
+}

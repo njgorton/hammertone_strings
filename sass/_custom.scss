@@ -1,18 +1,19 @@
 .custom {
     
-    &__container {
+    &__orders-container {
         display: flex;
         flex-wrap: nowrap;
     }
 
     &__img {
-        flex: 1;
+        flex: 0 0 50%;
         width: 100%;
-        filter: brightness(.9);
+        -webkit-filter: brightness(.8) saturate(1.5);
+        filter: brightness(.8) saturate(1.5);
     }
 
     &__content {
-        flex: 1;
+        flex: 0 0 50%;
         background-color: $color-white-dark;
         padding: 5rem;
     }
@@ -23,7 +24,7 @@
         text-shadow: 5px 5px 10px rgba(0,0,0, .3);
         text-align: center;
         margin-bottom: 1rem;
-        color: #23231A;
+        color: $color-brown;
     }
 
     &__heading-secondary {
@@ -43,17 +44,82 @@
     }
 
     &__list {
-        //list-style: none;
+        list-style: none;
         font-size: 2rem;
         margin-top: 5rem;
         margin-left: 5rem;
     }
 
     &__item {
-        margin: 1rem 0;
+        margin: 2rem 0;
+        display: flex;
+        align-items: center;
     }
 
-    &__btn {
+    &__iconBox {
+        flex: 1;
+        margin-right: 2rem;
+        padding: 5px;
+        background: $color-callOut * 1.8;
+        border: 1px solid $color-brown;
+        border-radius: 10px;
+        box-shadow: 2px 2px 4px rgba(0,0,0, .3);
+    }
 
+    &__icon {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    // &__span {
+    //     border-left: 4px solid $color-brown;
+    //     padding-left: 1rem;
+    // }
+
+    &__btn {
+        display: block;
+        margin-top: 5rem;
+        margin-left: auto;
+        font-size: 2rem;
+        color: $color-white-light;
+        background-color: $color-callOut;
+        padding: 1rem 2rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        box-shadow: 1rem 1rem 2rem rgba(0,0,0, .5);
+    }
+
+    &__story-container {
+        display: flex;
+    }
+
+    &__story-content {
+        flex:  0 0 50%;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        padding: 5rem;
+    }
+
+    &__story {
+        flex: 0 0 100%;
+        font-size: 3.5rem;
+        text-align: center;
+        line-height: 1.4;
+        text-shadow: 2px 2px 2px rgba(0,0,0, .2); 
+    }
+
+    &__story-author {
+        font-size: 3rem;
+        margin: 5rem 0;
+        margin-left: auto;  
+        line-height: 1.2;  
+        text-shadow: 2px 2px 2px rgba(0,0,0, .2);    
+    }
+
+    &__story-img {
+        flex: 0 0 50%;
+        width: 100%;
     }
 }

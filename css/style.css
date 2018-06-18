@@ -8,7 +8,7 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
-  font-family: "Montserrat" sans-serif; }
+  font-family: "Rajdhani", sans-serif; }
 
 body {
   background-color: #FAFAFA;
@@ -20,17 +20,18 @@ body {
   background-color: #23231A;
   color: #FAFAFA; }
 
-.custom__container {
+.custom__orders-container {
   display: flex;
   flex-wrap: nowrap; }
 
 .custom__img {
-  flex: 1;
+  flex: 0 0 50%;
   width: 100%;
-  filter: brightness(0.9); }
+  -webkit-filter: brightness(0.8) saturate(1.5);
+  filter: brightness(0.8) saturate(1.5); }
 
 .custom__content {
-  flex: 1;
+  flex: 0 0 50%;
   background-color: #EAE5DE;
   padding: 5rem; }
 
@@ -57,12 +58,69 @@ body {
   background: linear-gradient(to right, rgba(234, 229, 222, 0.1), rgba(0, 0, 0, 0.5), rgba(234, 229, 222, 0.1)); }
 
 .custom__list {
+  list-style: none;
   font-size: 2rem;
   margin-top: 5rem;
   margin-left: 5rem; }
 
 .custom__item {
-  margin: 1rem 0; }
+  margin: 2rem 0;
+  display: flex;
+  align-items: center; }
+
+.custom__iconBox {
+  flex: 1;
+  margin-right: 2rem;
+  padding: 5px;
+  background: #ff7c00;
+  border: 1px solid #23231A;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); }
+
+.custom__icon {
+  width: 4rem;
+  height: 4rem; }
+
+.custom__btn {
+  display: block;
+  margin-top: 5rem;
+  margin-left: auto;
+  font-size: 2rem;
+  color: #FAFAFA;
+  background-color: orangered;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.5); }
+
+.custom__story-container {
+  display: flex; }
+
+.custom__story-content {
+  flex: 0 0 50%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  padding: 5rem; }
+
+.custom__story {
+  flex: 0 0 100%;
+  font-size: 3.5rem;
+  text-align: center;
+  line-height: 1.4;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); }
+
+.custom__story-author {
+  font-size: 3rem;
+  margin: 5rem 0;
+  margin-left: auto;
+  line-height: 1.2;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); }
+
+.custom__story-img {
+  flex: 0 0 50%;
+  width: 100%; }
 
 .footer {
   margin-top: 20rem; }
@@ -134,7 +192,7 @@ body {
   .form__email {
     flex: 0 0 40%;
     font-size: 1.7rem;
-    font-family: "Montserrat" sans-serif;
+    font-family: "Rajdhani", sans-serif;
     padding: 5px 10px;
     border: none;
     border-radius: 5px; }
@@ -145,7 +203,7 @@ body {
     border: none;
     border-radius: 5px;
     font-size: 2rem;
-    font-family: "Montserrat" sans-serif;
+    font-family: "Rajdhani", sans-serif;
     padding: 10px 20px;
     margin-left: 2rem;
     cursor: pointer; }
@@ -179,6 +237,7 @@ body {
   .navigation__link:link, .navigation__link:visited {
     text-decoration: none;
     color: #FAFAFA;
+    font-family: "Cormorant Unicase", serif;
     font-size: 2.5rem; }
 
 .products {
@@ -239,3 +298,31 @@ body {
     color: #23231A;
     text-align: center;
     padding: 1rem; }
+
+.demos {
+  height: 100vh;
+  background: #EAE5DE;
+  padding: 5rem;
+  padding-bottom: 10rem; }
+  .demos__heading {
+    margin-bottom: 3rem; }
+    .demos__heading h2 {
+      font-size: 4.5rem;
+      font-family: "Cormorant Unicase", serif;
+      text-align: center;
+      color: #23231A;
+      text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); }
+  .demos__container {
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+  .demos__videoCell {
+    background: #FAFAFA;
+    padding: 3.5rem;
+    border-radius: 10px; }
+  .demos__videoHeading {
+    text-align: center;
+    font-size: 2.5rem;
+    color: dimgrey;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); }
