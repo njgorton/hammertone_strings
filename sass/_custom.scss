@@ -117,16 +117,11 @@
     &__iconBox {
         flex: 1;
         margin-right: 2rem;
-        padding: 5px;
-        background: radial-gradient(#CB6C17 * 1.5, #9A2601, rgb(0,0,0));
-        border: 1px solid $color-brown;
-        border-radius: 10px;
-        box-shadow: 2px 2px 4px rgba(0,0,0, .3);
     }
 
     &__icon {
-        width: 4rem;
-        height: 4rem;
+        width: 5rem;
+        height: 5rem;
     }
 
     // &__span {
@@ -150,8 +145,8 @@
 
     &__story-container {
         display: flex;
-        background-color: black;
-        color: $color-grey-light;
+        background-color: $color-gold;
+        color: $color-brown;
     }
 
     &__story-content {

@@ -9,7 +9,7 @@
         text-align: center;
         margin-top: 12rem;
         margin-bottom: 1rem;
-        color: #23231A;
+        color: $color-brown;
     }
 
     &__heading-secondary {
@@ -64,12 +64,12 @@
     // }
 
     &__heading {
-        background-color: $color-brown;
+        background-color: $color-gold;
         font-size: 2.5rem;
         text-align: center;
         padding: 1rem 0; 
         width: 100%;
-        color: $color-grey-light;             
+        color: $color-brown;             
     }
 
     &__text {
