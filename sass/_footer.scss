@@ -1,4 +1,173 @@
 .footer {
-    padding-top: 50rem;
     background-color: $color-brown;
+    color: $color-grey-light;
+    padding: 10rem 5rem 0 5rem;
+    height: 100%;
+
+    &__iconBox {
+        margin: 0 auto;
+        margin-bottom: 10rem;
+        width: 30%;
+        display: flex;
+        justify-content: space-around;
+        
+
+        i {
+            font-size: 5rem;
+            cursor: pointer;            
+
+            &:hover {
+                color: $color-callOut;
+            }
+        }
+    }
+
+    &__main {
+        margin-bottom: 10rem;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__list {
+        list-style: none;
+        text-align: center;
+
+        &:not(:last-child) {
+            border-right: 1px solid $color-grey-light;
+            padding-right: 7rem;
+        }
+    }
+
+    &__item {
+        margin: 1rem 0;
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            text-decoration: none;
+            color: $color-grey-light;
+            font-size: 2rem;
+            transition: all .2s ease;
+        }
+
+        &:hover {
+            color: $color-callOut;
+        }
+    }
+
+    &__span {
+        color: $color-grey-light;
+        font-size: 2rem;
+    }
+
+    &__policy {
+        text-align: center;
+        font-size: 2rem;
+        transition: all .2s ease;
+    }
+
+    &__policyLinks {
+        cursor: pointer;
+
+        &:hover {
+            color: $color-callOut;
+        }
+    }
+
+    &__hr {
+        width: 80%;
+        height: 2px;
+        border: none;
+        border-radius: 50%;
+        margin: 5rem auto;
+        margin-bottom: 10rem;
+        background: linear-gradient(to right, rgba($color-brown, .1), $color-white-dark, rgba($color-brown, .1));
+    }
+
+    &__description {
+        font-size: 1.8rem;
+        text-align: center;
+        line-height: 1.5;
+        margin: 0 auto;
+        width: 80%;
+        transition: all .2s ease;
+    }
+
+    &__github {
+        &:link,
+        &:visited {
+            text-decoration: none;
+            color: $color-grey-light;
+        }
+
+        &:hover {
+            color: $color-callOut;
+        }
+
+        i {
+            color: black;
+            font-size: 2rem;
+        }
+    }
+
+    &__attributions {
+        font-size: 1.8rem;
+        text-align: center;
+        line-height: 1.5;
+        margin: 2rem auto;
+        width: 80%;
+        transition: all .2s ease;
+
+        a {
+            &:link,
+            &:visited {
+                text-decoration: none;
+                color: $color-grey-light;
+            }
+
+            &:hover {
+                color: $color-callOut;
+            }
+        }
+    }
+
+    &__logo {
+        margin-top: 10rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__hammer,
+    &__sound {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    &__copyright {
+        font-size: 1.8rem;
+        text-align: center;
+        line-height: 1.5;
+        margin: 2rem auto;
+        margin-bottom: 5rem;
+        width: 80%;
+        transition: all .2s ease;
+
+        span {
+            font-family: $font-heading;
+            font-size: 2rem;
+        }
+
+        a {
+            &:link,
+            &:visited {
+                text-decoration: none;
+                color: $color-grey-light;
+            }
+
+            &:hover {
+                color: $color-callOut;
+            }
+        }
+    }
 }
