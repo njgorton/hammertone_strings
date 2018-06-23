@@ -97,5 +97,11 @@
         padding: 10px 20px;
         margin-left: 2rem;
         cursor: pointer;
+        transition: all .2s ease;
+
+        &:hover {
+            background-color: $color-gold * .9;
+            transform: scale(1.05);
+        }
     }
 }

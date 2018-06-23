@@ -14,11 +14,20 @@
 
         i {
             font-size: 5rem;
-            cursor: pointer;            
+            cursor: pointer; 
+            box-shadow: 1rem 1rem 2rem rgba(0,0,0, .5);
+            transition: all .2s ease;
 
             &:hover {
                 color: $color-callOut;
+                transform: translateY(-2px) scale(1.1);
+                box-shadow: 1.5rem 1.5rem 2.5rem rgba(0,0,0, .5);
             }
+    
+            &:active {
+                transform: translateY(0);
+                box-shadow: 1rem 1rem 2rem rgba(0,0,0, .5);
+            }          
         }
     }
 
@@ -48,7 +57,7 @@
             text-decoration: none;
             color: $color-grey-light;
             font-size: 2rem;
-            transition: all .2s ease;
+            transition: color .2s ease; 
         }
 
         &:hover {
@@ -64,11 +73,11 @@
     &__policy {
         text-align: center;
         font-size: 2rem;
-        transition: all .2s ease;
     }
 
     &__policyLinks {
         cursor: pointer;
+        transition: color .2s ease; 
 
         &:hover {
             color: $color-callOut;
@@ -91,7 +100,6 @@
         line-height: 1.5;
         margin: 0 auto;
         width: 80%;
-        transition: all .2s ease;
     }
 
     &__github {
@@ -99,6 +107,7 @@
         &:visited {
             text-decoration: none;
             color: $color-grey-light;
+            transition: color .2s ease; 
         }
 
         &:hover {
@@ -117,13 +126,13 @@
         line-height: 1.5;
         margin: 2rem auto;
         width: 80%;
-        transition: all .2s ease;
 
         a {
             &:link,
             &:visited {
                 text-decoration: none;
                 color: $color-grey-light;
+                transition: color .2s ease; 
             }
 
             &:hover {
@@ -151,7 +160,6 @@
         margin: 2rem auto;
         margin-bottom: 5rem;
         width: 80%;
-        transition: all .2s ease;
 
         span {
             font-family: $font-heading;
@@ -163,6 +171,7 @@
             &:visited {
                 text-decoration: none;
                 color: $color-grey-light;
+                transition: color .2s ease; 
             }
 
             &:hover {
