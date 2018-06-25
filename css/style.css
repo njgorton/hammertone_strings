@@ -9,19 +9,22 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
   font-family: "Rajdhani", sans-serif; }
+  @media only screen and (min-width: 100em) {
+    html {
+      font-size: 75%; } }
 
 body {
-  background-color: #FAFAFA;
+  background-color: #9e9e9e;
   max-width: 1800px;
   margin: 0 auto;
   overflow-x: hidden; }
 
 ::selection {
-  background-color: #23201a;
+  background-color: #901c08;
   color: #FAFAFA; }
 
 .custom__orders-container {
-  height: 80rem;
+  height: 100%;
   display: flex;
   flex-wrap: nowrap; }
 
@@ -77,8 +80,9 @@ body {
 
 .custom__content {
   flex: 0 0 50%;
+  position: relative;
   background-color: #23201a;
-  padding: 5rem; }
+  padding: 7rem 5rem; }
 
 .custom__heading-primary {
   font-size: 4rem;
@@ -106,7 +110,10 @@ body {
   list-style: none;
   font-size: 2rem;
   margin-top: 5rem;
-  margin-left: 5rem; }
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
 
 .custom__item {
   margin: 2rem 0;
@@ -124,8 +131,9 @@ body {
 
 .custom__btn {
   display: block;
-  margin-top: 5rem;
-  margin-left: auto;
+  position: absolute;
+  bottom: 10rem;
+  right: 5rem;
   font-size: 2rem;
   color: #FAFAFA;
   background-color: #901c08;
@@ -135,6 +143,9 @@ body {
   cursor: pointer;
   box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.5);
   transition: all .2s ease; }
+  @media only screen and (max-width: 87.5em) {
+    .custom__btn {
+      bottom: 7rem; } }
   .custom__btn:hover {
     transform: translateY(-2px) scale(1.1);
     box-shadow: 1.5rem 1.5rem 2.5rem rgba(0, 0, 0, 0.5); }
@@ -160,6 +171,9 @@ body {
   text-align: center;
   line-height: 1.4;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); }
+  @media only screen and (max-width: 87.5em) {
+    .custom__story {
+      font-size: 3rem; } }
 
 .custom__story-author {
   font-size: 3rem;
@@ -167,10 +181,14 @@ body {
   margin-left: auto;
   line-height: 1.2;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); }
+  @media only screen and (max-width: 87.5em) {
+    .custom__story-author {
+      font-size: 2.5rem; } }
 
 .custom__story-img {
   flex: 0 0 50%;
-  width: 100%; }
+  object-fit: cover;
+  display: block; }
 
 .demos {
   background: #EAE5DE;
@@ -270,7 +288,7 @@ body {
 .footer {
   background-color: #23201a;
   color: #9e9e9e;
-  padding: 10rem 5rem 0 5rem;
+  padding: 7rem 5rem 0 5rem;
   height: 100%; }
   .footer__iconBox {
     margin: 0 auto;
@@ -282,6 +300,7 @@ body {
       font-size: 5rem;
       cursor: pointer;
       box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.5);
+      margin: 0 2rem;
       transition: all .2s ease; }
       .footer__iconBox i:hover {
         color: #901c08;
@@ -300,6 +319,9 @@ body {
     .footer__list:not(:last-child) {
       border-right: 1px solid #9e9e9e;
       padding-right: 7rem; }
+      @media only screen and (max-width: 87.5em) {
+        .footer__list:not(:last-child) {
+          padding-right: 5rem; } }
   .footer__item {
     margin: 1rem 0; }
   .footer__link:link, .footer__link:visited {
@@ -380,10 +402,14 @@ body {
       color: #901c08; }
 
 .header {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/img/hero_extraLarge.jpg");
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/img/hero_large.jpg");
   background-size: cover;
   width: 100%;
+  min-height: 100%;
   height: 105vh; }
+  @media only screen and (min-width: 100em) {
+    .header {
+      background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/img/hero_extraLarge.jpg"); } }
   .header__title {
     width: 80%;
     height: 100%;
@@ -428,11 +454,12 @@ body {
 
 .form {
   align-self: flex-end;
-  margin-top: 7rem;
+  margin-top: auto;
+  margin-bottom: 5rem;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 3rem;
   border-radius: 10px;
-  max-width: 40%; }
+  width: 45rem; }
   .form__label {
     display: block;
     font-size: 2rem;
@@ -496,13 +523,13 @@ body {
 
 .products {
   background-color: #FAFAFA;
+  padding-top: 7rem;
   padding-bottom: 15rem; }
   .products__heading-primary {
     font-size: 4rem;
     font-family: "Cormorant Unicase", serif;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     text-align: center;
-    margin-top: 12rem;
     margin-bottom: 1rem;
     color: #23201a; }
   .products__heading-secondary {
@@ -532,14 +559,22 @@ body {
   box-shadow: 1.5rem 1.5rem 2rem rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   overflow: hidden;
+  height: 100%;
+  min-height: 40rem;
   cursor: pointer;
   transition: all .1s ease; }
   .card:hover {
     transform: translateY(-1rem) scale(1.05);
     box-shadow: 2rem 2rem 4rem rgba(0, 0, 0, 0.3); }
+  .card__imgBox {
+    height: 18rem; }
   .card__img {
-    flex: 1;
-    width: 100%; }
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block; }
+  .card__details {
+    flex: 1; }
   .card__heading {
     background-color: #af8640;
     font-size: 2.5rem;
@@ -551,11 +586,11 @@ body {
     font-size: 2rem;
     color: #23201a;
     text-align: center;
-    padding: 1rem; }
+    padding: 2rem; }
 
 .vip {
   background-color: #FAFAFA;
-  padding: 10rem 0 10rem 5rem; }
+  padding: 7rem 0 10rem 5rem; }
   .vip__heading {
     margin-bottom: 7rem; }
     .vip__heading h2 {
@@ -597,6 +632,7 @@ body {
     border-radius: 10px 0 0 10px;
     box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.5);
     padding: 3rem;
+    margin-top: 3rem;
     display: grid;
     grid-template-columns: min-content 1fr;
     grid-template-rows: 1fr 1fr;

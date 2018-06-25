@@ -5,29 +5,29 @@ $color-white-dark: #EAE5DE;
 $color-grey-light: dimgrey * 1.5;
 $color-grey-dark: dimgrey;
 
-//$color-brown:  #23231A;
 $color-brown: #23201a;
-$color-callOut: #901c08;
 $color-gold: #af8640;
+$color-callOut: #901c08;
 
 
 // FONTS
-//$font-content: 'Montserrat' sans-serif;
 $font-heading: 'Cormorant Unicase', serif;
 $font-content: 'Rajdhani', sans-serif;
 
-// RESPONSIVE BREAKPOINTS
-// $bp-largest: 100em;         // 1600px +
-// $bp-larger: 87.5em;         // 1400px
-// $bp-large: 75em;            // 1200px
 
-// $bp-medium-large: 62.5em;   // 1000px
-// $bp-medium: 50em;           // 800px
-// $bp-medium-small: 43.75em;  // 700px
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 100em;         // 1600px +
+$bp-larger: 87.5em;         // 1400px
+$bp-large: 75em;            // 1200px
+
+$bp-medium-large: 62.5em;   // 1000px
+$bp-medium: 50em;           // 800px
+$bp-medium-small: 43.75em;  // 700px
         
-// $bp-small: 37.5em;          // 600px
-// $bp-smaller: 31.25em;       // 500px
-// $bp-smallest: 25em;         // 400px
+$bp-small: 37.5em;          // 600px
+$bp-smaller: 31.25em;       // 500px
+$bp-smallest: 25em;         // 400px
+
 
 // DEFAULT SETTINGS
 *,
@@ -43,19 +43,23 @@ html {
     font-size: 62.5%;   // 10px/16px = 62.5%
     font-family: $font-content;
 
-    // @media only screen and (min-width: $bp-largest) {
-    //     font-size: 75%;
+    @media only screen and (min-width: $bp-largest) {
+        font-size: 75%;
+    }
+
+    // @media only screen and (max-width: $bp-large) {
+    //     font-size: 55%;
     // }
 }
 
 body {  
-    background-color: $color-white-light;
+    background-color: $color-grey-light;
     max-width: 1800px;
     margin: 0 auto;
     overflow-x: hidden;
 }
 
 ::selection {
-    background-color: $color-brown;
+    background-color: $color-callOut;
     color: $color-white-light;
 }
