@@ -16,7 +16,11 @@
       padding-top: 15rem;
       display: flex;
       flex-direction: column;
-      align-items: center;      
+      align-items: center;  
+      
+      @media only screen and (max-width: $bp-medium-small) {
+        width: 100%;
+      }
 
       .logo {
         display: flex;
@@ -51,6 +55,10 @@
         width: 80%;
         height: 2px;
         background: linear-gradient(to right, rgba(0,0,0, .1), $color-white-light, rgba(0,0,0, .1));
+
+        @media only screen and (max-width: $bp-medium-small) {
+            width: 100%;
+        }
       }
       
       h2 {
@@ -67,6 +75,10 @@
         @media only screen and (max-width: $bp-medium) {
             font-size: 3rem;
         }
+
+        @media only screen and (max-width: $bp-medium-small) {
+            align-self: center;
+        }
       }
     }
 }
@@ -79,6 +91,11 @@
     padding: 3rem;
     border-radius: 10px;
     width: 45rem;
+
+    @media only screen and (max-width: $bp-medium-small) {
+        margin-right: 2rem;
+        padding: 1.5rem;
+    }
 
     &__label {
         display: block;

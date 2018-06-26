@@ -266,6 +266,9 @@ body {
       .demos__videoCell {
         width: 80%;
         margin-right: 15rem; } }
+    @media only screen and (max-width: 43.75em) {
+      .demos__videoCell {
+        width: 100%; } }
   .demos__videoHeading {
     margin: auto 0;
     margin-bottom: 1rem; }
@@ -311,6 +314,9 @@ body {
     cursor: pointer;
     box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.3);
     transition: all .2s ease; }
+    @media only screen and (max-width: 43.75em) {
+      .demos__btn {
+        width: 50%; } }
     .demos__btn:hover {
       transform: translateY(-2px) scale(1.1);
       box-shadow: 1.5rem 1.5rem 2.5rem rgba(0, 0, 0, 0.3); }
@@ -463,6 +469,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center; }
+    @media only screen and (max-width: 43.75em) {
+      .header__title {
+        width: 100%; } }
     .header__title .logo {
       display: flex;
       border-radius: 50%;
@@ -489,6 +498,9 @@ body {
       width: 80%;
       height: 2px;
       background: linear-gradient(to right, rgba(0, 0, 0, 0.1), #FAFAFA, rgba(0, 0, 0, 0.1)); }
+      @media only screen and (max-width: 43.75em) {
+        .header__title hr {
+          width: 100%; } }
     .header__title h2 {
       margin-top: 5rem;
       align-self: flex-end;
@@ -502,6 +514,9 @@ body {
       @media only screen and (max-width: 56.25em) {
         .header__title h2 {
           font-size: 3rem; } }
+      @media only screen and (max-width: 43.75em) {
+        .header__title h2 {
+          align-self: center; } }
 
 .form {
   align-self: flex-end;
@@ -511,6 +526,10 @@ body {
   padding: 3rem;
   border-radius: 10px;
   width: 45rem; }
+  @media only screen and (max-width: 43.75em) {
+    .form {
+      margin-right: 2rem;
+      padding: 1.5rem; } }
   .form__label {
     display: block;
     font-size: 2rem;
@@ -659,6 +678,9 @@ body {
 .vip {
   background-color: #FAFAFA;
   padding: 7rem 0 10rem 5rem; }
+  @media only screen and (max-width: 43.75em) {
+    .vip {
+      padding: 7rem 5rem 10rem 5rem; } }
   .vip__heading {
     margin-bottom: 7rem; }
     .vip__heading h2 {
@@ -668,9 +690,13 @@ body {
       text-align: center;
       margin-bottom: 1rem;
       color: #23201a; }
+      @media only screen and (max-width: 43.75em) {
+        .vip__heading h2 {
+          font-size: 4rem; } }
     .vip__heading h3 {
       font-size: 2.5rem;
       text-align: center;
+      margin: 0 3rem;
       color: dimgrey;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); }
     .vip__heading hr {
@@ -680,11 +706,21 @@ body {
       border-radius: 50%;
       margin: 2rem auto;
       background: linear-gradient(to right, #FAFAFA, #23201a, #FAFAFA); }
+      @media only screen and (max-width: 43.75em) {
+        .vip__heading hr {
+          width: 100%; } }
   .vip__join {
     display: grid;
     grid-template-columns: 1fr 1fr; }
+    @media only screen and (max-width: 43.75em) {
+      .vip__join {
+        display: block; } }
   .vip__img {
     width: 100%; }
+    @media only screen and (max-width: 43.75em) {
+      .vip__img {
+        margin-left: 5rem;
+        margin-bottom: 5rem; } }
   .vip__content {
     display: flex;
     flex-direction: column;
@@ -698,6 +734,10 @@ body {
     @media only screen and (max-width: 56.25em) {
       .vip__text {
         font-size: 2.5rem; } }
+    @media only screen and (max-width: 43.75em) {
+      .vip__text {
+        text-align: center;
+        margin: 0 auto; } }
   .vip__form {
     background-color: #23201a;
     border-radius: 10px 0 0 10px;
@@ -712,13 +752,18 @@ body {
       .vip__form {
         grid-gap: 3rem;
         padding: 1rem; } }
+    @media only screen and (max-width: 43.75em) {
+      .vip__form {
+        border-radius: 10px;
+        padding: 3rem; } }
   .vip__emailBox {
     grid-column: 1 / 2;
     display: flex;
     flex-direction: column; }
     .vip__emailBox label {
       font-size: 2.5rem;
-      color: #9e9e9e; }
+      color: #9e9e9e;
+      margin-bottom: 1rem; }
       @media only screen and (max-width: 56.25em) {
         .vip__emailBox label {
           font-size: 2rem; } }

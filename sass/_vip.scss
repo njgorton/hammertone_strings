@@ -1,7 +1,10 @@
 .vip {
-background-color: $color-white-light;
-padding: 7rem 0 10rem 5rem;
+    background-color: $color-white-light;
+    padding: 7rem 0 10rem 5rem;
 
+    @media only screen and (max-width: $bp-medium-small) {
+        padding: 7rem 5rem 10rem 5rem;
+    }
 
     &__heading {
         margin-bottom: 7rem;
@@ -13,11 +16,16 @@ padding: 7rem 0 10rem 5rem;
             text-align: center;
             margin-bottom: 1rem;
             color: $color-brown;
+
+            @media only screen and (max-width: $bp-medium-small) {
+                font-size: 4rem;
+            }
         }
     
         h3 {
             font-size: 2.5rem;
             text-align: center;
+            margin: 0 3rem;
             color: $color-grey-dark;
             text-shadow: 2px 2px 4px rgba(0,0,0, .1);
         }
@@ -29,16 +37,29 @@ padding: 7rem 0 10rem 5rem;
             border-radius: 50%;
             margin: 2rem auto;
             background: linear-gradient(to right, $color-white-light, $color-brown, $color-white-light);
+
+            @media only screen and (max-width: $bp-medium-small) {
+                width: 100%;
+            }
         }
     }
 
     &__join {
         display: grid;
         grid-template-columns: 1fr 1fr;
+
+        @media only screen and (max-width: $bp-medium-small) {
+            display: block;
+        }
     }
 
     &__img {
-        width: 100%; 
+        width: 100%;
+        
+        @media only screen and (max-width: $bp-medium-small) {
+            margin-left: 5rem;
+            margin-bottom: 5rem;
+        }
     }
 
     &__content {
@@ -57,6 +78,11 @@ padding: 7rem 0 10rem 5rem;
         @media only screen and (max-width: $bp-medium) {
             font-size: 2.5rem;
         }
+
+        @media only screen and (max-width: $bp-medium-small) {
+            text-align: center;
+            margin: 0 auto;
+        }
     }
 
     &__form {
@@ -74,6 +100,11 @@ padding: 7rem 0 10rem 5rem;
             grid-gap: 3rem;
             padding: 1rem;
         }
+
+        @media only screen and (max-width: $bp-medium-small) {
+            border-radius: 10px;
+            padding: 3rem;
+        }
     }
 
     &__emailBox {
@@ -84,6 +115,7 @@ padding: 7rem 0 10rem 5rem;
         label {
             font-size: 2.5rem;
             color: $color-grey-light;
+            margin-bottom: 1rem;
 
             @media only screen and (max-width: $bp-medium) {
                 font-size: 2rem;
