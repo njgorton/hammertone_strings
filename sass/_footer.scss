@@ -36,6 +36,12 @@
         margin-bottom: 10rem;
         display: flex;
         justify-content: space-around;
+
+        @media only screen and (max-width: $bp-medium) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 5rem;
+        }
     }
 
     &__list {
@@ -52,6 +58,11 @@
 
             @media only screen and (max-width: $bp-large) {
                 padding-right: 4rem;
+            }
+
+            @media only screen and (max-width: $bp-medium) {
+                border: none;
+                padding: 0;
             }
         }
     }

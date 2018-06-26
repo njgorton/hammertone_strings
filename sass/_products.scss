@@ -44,6 +44,13 @@
             grid-gap: 2rem;
             padding: 2rem;
         }
+
+        @media only screen and (max-width: $bp-medium) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 7rem 3rem;
+            padding: 3rem;
+            justify-items: center;
+        }
     }
 }
 
@@ -59,6 +66,10 @@
     min-height: 40rem;
     cursor: pointer;
     transition: all .1s ease;
+
+    @media only screen and (max-width: $bp-medium) {
+        max-width: 35rem;
+    }
 
     &:hover {
         transform: translateY(-1rem) scale(1.05);
