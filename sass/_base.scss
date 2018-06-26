@@ -47,9 +47,13 @@ html {
         font-size: 75%;
     }
 
-    // @media only screen and (max-width: $bp-large) {
-    //     font-size: 55%;
-    // }
+    @media only screen and (max-width: $bp-large) {
+        font-size: 55%;
+    }
+
+    @media only screen and (max-width: $bp-medium-large) {
+        font-size: 50%;
+    }
 }
 
 body {  

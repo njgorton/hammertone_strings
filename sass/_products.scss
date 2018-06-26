@@ -34,6 +34,16 @@
         grid-gap: 5rem;
         justify-content: space-around;
         padding: 5rem;
+
+        @media only screen and (max-width: $bp-larger) {
+            grid-gap: 3rem;
+            padding: 3rem;
+        }
+
+        @media only screen and (max-width: $bp-large) {
+            grid-gap: 2rem;
+            padding: 2rem;
+        }
     }
 }
 
