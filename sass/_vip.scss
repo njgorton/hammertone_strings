@@ -6,6 +6,10 @@
         padding: 7rem 5rem 10rem 5rem;
     }
 
+    @media only screen and (max-width: $bp-small) {
+        padding: 7rem 2rem;
+    }
+
     &__heading {
         margin-bottom: 7rem;
 
@@ -20,6 +24,10 @@
             @media only screen and (max-width: $bp-medium-small) {
                 font-size: 4rem;
             }
+
+            @media only screen and (max-width: $bp-small) {
+                font-size: 3.5rem;
+            }
         }
     
         h3 {
@@ -28,6 +36,10 @@
             margin: 0 3rem;
             color: $color-grey-dark;
             text-shadow: 2px 2px 4px rgba(0,0,0, .1);
+
+            @media only screen and (max-width: $bp-small) {
+                font-size: 2rem;
+            }
         }
     
         hr {
@@ -104,6 +116,10 @@
         @media only screen and (max-width: $bp-medium-small) {
             border-radius: 10px;
             padding: 3rem;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            padding: 1rem;
         }
     }
 

@@ -47,6 +47,11 @@
         @media only screen and (max-width: $bp-medium) {
             font-size: 5rem;
         }
+
+        @media only screen and (max-width: $bp-small) {
+            text-align: center;
+            margin: 0 5rem;
+        }
       }
 
       hr {
@@ -94,7 +99,13 @@
 
     @media only screen and (max-width: $bp-medium-small) {
         margin-right: 2rem;
+        margin-bottom: 10rem;
         padding: 1.5rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        width: 40rem;
+        align-self: center;
     }
 
     &__label {

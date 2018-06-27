@@ -3,6 +3,10 @@
     padding-top: 7rem;
     padding-bottom: 15rem;
 
+    @media only screen and (max-width: $bp-small) {
+        padding-bottom: 5rem;
+    }
+
     &__heading-primary {
         font-size: 4rem;
         font-family: $font-heading;
@@ -17,6 +21,10 @@
         text-align: center;
         color: $color-grey-dark;
         text-shadow: 2px 2px 4px rgba(0,0,0, .1);
+
+        @media only screen and (max-width: $bp-small) {
+            margin: 0 3rem;
+        }
     }
 
     &__hr {
@@ -51,6 +59,11 @@
             padding: 3rem;
             justify-items: center;
         }
+
+        @media only screen and (max-width: $bp-small) {
+            display: block;
+            padding-top: 0;
+        }
     }
 }
 
@@ -69,6 +82,10 @@
 
     @media only screen and (max-width: $bp-medium) {
         max-width: 35rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        margin: 7rem auto;
     }
 
     &:hover {

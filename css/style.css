@@ -142,6 +142,9 @@ body {
   display: flex;
   align-items: center;
   color: #EAE5DE; }
+  @media only screen and (max-width: 31.25em) {
+    .custom__item {
+      flex-direction: column; } }
 
 .custom__iconBox {
   margin-right: 2rem; }
@@ -149,6 +152,15 @@ body {
 .custom__icon {
   width: 5rem;
   height: 5rem; }
+  @media only screen and (max-width: 31.25em) {
+    .custom__icon {
+      width: 8rem;
+      height: 8rem; } }
+
+@media only screen and (max-width: 31.25em) {
+  .custom__span {
+    text-align: center;
+    margin-top: 1rem; } }
 
 .custom__btn {
   display: block;
@@ -201,8 +213,14 @@ body {
   @media only screen and (max-width: 87.5em) {
     .custom__story {
       font-size: 3rem; } }
+  @media only screen and (max-width: 31.25em) {
+    .custom__story {
+      font-size: 2.5rem; } }
   .custom__story i {
     font-size: 2rem; }
+    @media only screen and (max-width: 31.25em) {
+      .custom__story i {
+        font-size: 1.8rem; } }
 
 .custom__story-author {
   font-size: 3rem;
@@ -213,6 +231,10 @@ body {
   @media only screen and (max-width: 87.5em) {
     .custom__story-author {
       font-size: 2.5rem; } }
+  @media only screen and (max-width: 31.25em) {
+    .custom__story-author {
+      margin: 3rem auto;
+      font-size: 2rem; } }
 
 .custom__story-img {
   flex: 0 0 50%;
@@ -222,6 +244,9 @@ body {
 .demos {
   background: #EAE5DE;
   padding: 7rem 5rem 10rem 5rem; }
+  @media only screen and (max-width: 31.25em) {
+    .demos {
+      padding: 7rem 2rem; } }
   .demos__heading {
     margin-bottom: 5rem; }
     .demos__heading h2 {
@@ -268,7 +293,8 @@ body {
         margin-right: 15rem; } }
     @media only screen and (max-width: 43.75em) {
       .demos__videoCell {
-        width: 100%; } }
+        width: 100%;
+        min-height: 25rem; } }
   .demos__videoHeading {
     margin: auto 0;
     margin-bottom: 1rem; }
@@ -492,6 +518,10 @@ body {
       @media only screen and (max-width: 56.25em) {
         .header__title h1 {
           font-size: 5rem; } }
+      @media only screen and (max-width: 31.25em) {
+        .header__title h1 {
+          text-align: center;
+          margin: 0 5rem; } }
     .header__title hr {
       border: 0;
       border-radius: 100%;
@@ -529,7 +559,12 @@ body {
   @media only screen and (max-width: 43.75em) {
     .form {
       margin-right: 2rem;
+      margin-bottom: 10rem;
       padding: 1.5rem; } }
+  @media only screen and (max-width: 31.25em) {
+    .form {
+      width: 40rem;
+      align-self: center; } }
   .form__label {
     display: block;
     font-size: 2rem;
@@ -595,6 +630,9 @@ body {
   background-color: #FAFAFA;
   padding-top: 7rem;
   padding-bottom: 15rem; }
+  @media only screen and (max-width: 31.25em) {
+    .products {
+      padding-bottom: 5rem; } }
   .products__heading-primary {
     font-size: 4rem;
     font-family: "Cormorant Unicase", serif;
@@ -607,6 +645,9 @@ body {
     text-align: center;
     color: dimgrey;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); }
+    @media only screen and (max-width: 31.25em) {
+      .products__heading-secondary {
+        margin: 0 3rem; } }
   .products__hr {
     width: 80%;
     height: 2px;
@@ -634,6 +675,10 @@ body {
         grid-gap: 7rem 3rem;
         padding: 3rem;
         justify-items: center; } }
+    @media only screen and (max-width: 31.25em) {
+      .products__grid {
+        display: block;
+        padding-top: 0; } }
 
 .card {
   display: flex;
@@ -650,6 +695,9 @@ body {
   @media only screen and (max-width: 56.25em) {
     .card {
       max-width: 35rem; } }
+  @media only screen and (max-width: 31.25em) {
+    .card {
+      margin: 7rem auto; } }
   .card:hover {
     transform: translateY(-1rem) scale(1.05);
     box-shadow: 2rem 2rem 4rem rgba(0, 0, 0, 0.3); }
@@ -681,6 +729,9 @@ body {
   @media only screen and (max-width: 43.75em) {
     .vip {
       padding: 7rem 5rem 10rem 5rem; } }
+  @media only screen and (max-width: 31.25em) {
+    .vip {
+      padding: 7rem 2rem; } }
   .vip__heading {
     margin-bottom: 7rem; }
     .vip__heading h2 {
@@ -693,12 +744,18 @@ body {
       @media only screen and (max-width: 43.75em) {
         .vip__heading h2 {
           font-size: 4rem; } }
+      @media only screen and (max-width: 31.25em) {
+        .vip__heading h2 {
+          font-size: 3.5rem; } }
     .vip__heading h3 {
       font-size: 2.5rem;
       text-align: center;
       margin: 0 3rem;
       color: dimgrey;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); }
+      @media only screen and (max-width: 31.25em) {
+        .vip__heading h3 {
+          font-size: 2rem; } }
     .vip__heading hr {
       width: 80%;
       height: 2px;
@@ -756,6 +813,9 @@ body {
       .vip__form {
         border-radius: 10px;
         padding: 3rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .vip__form {
+        padding: 1rem; } }
   .vip__emailBox {
     grid-column: 1 / 2;
     display: flex;

@@ -2,6 +2,10 @@
     background: $color-white-dark;
     padding: 7rem 5rem 10rem 5rem;
 
+    @media only screen and (max-width: $bp-small) {
+        padding: 7rem 2rem;
+    }
+
     &__heading {
         margin-bottom: 5rem;
 
@@ -64,6 +68,7 @@
 
         @media only screen and (max-width: $bp-medium-small) {
             width: 100%;
+            min-height: 25rem;
         }
     }
 
