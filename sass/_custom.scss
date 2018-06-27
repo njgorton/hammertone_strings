@@ -183,6 +183,12 @@
             bottom: 7rem;
         }
 
+        @media only screen and (max-width: $bp-smaller) {
+            right: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
         &:hover {
             transform: translateY(-2px) scale(1.1);
             box-shadow: 1.5rem 1.5rem 2.5rem rgba(0,0,0, .5);
@@ -214,6 +220,10 @@
         @media only screen and (max-width: $bp-medium) {
             padding: 5rem;
         }
+
+        @media only screen and (max-width: $bp-smaller) {
+            padding: 3rem;
+        }
     }
 
     &__story {
@@ -231,11 +241,19 @@
             font-size: 2.5rem;
         }
 
+        @media only screen and (max-width: $bp-smaller) {
+            font-size: 2rem;
+        }
+
         i {
             font-size: 2rem;
 
             @media only screen and (max-width: $bp-small) {
                 font-size: 1.8rem;
+            }
+
+            @media only screen and (max-width: $bp-smaller) {
+                font-size: 1.5rem;
             }
         }
     }
@@ -261,5 +279,13 @@
         flex: 0 0 50%;
         object-fit: cover;
         display: block;
+
+        @media only screen and (max-width: $bp-small) {
+            max-height: 35rem;
+        }
+
+        @media only screen and (max-width: $bp-smaller) {
+            max-height: 30rem;
+        }
     }
 }
