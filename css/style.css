@@ -659,32 +659,138 @@ body {
   position: fixed;
   top: 0;
   z-index: 1000;
-  background-color: #23201a;
+  background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
   max-width: 1800px;
-  padding: 2rem 5rem;
+  padding: 1rem 5rem;
   display: flex;
-  justify-content: space-between; }
-  .navigation__logo {
-    display: flex;
-    cursor: pointer; }
-  .navigation__hammer {
-    width: 3rem;
-    height: 3rem; }
-  .navigation__sound {
-    width: 3rem;
-    height: 3rem; }
+  justify-content: space-between;
+  align-items: center; }
+  @media only screen and (max-width: 43.75em) {
+    .navigation {
+      padding: 1rem; } }
+  .navigation__logo:link, .navigation__logo:visited {
+    display: flex; }
+  @media only screen and (max-width: 43.75em) {
+    .navigation__logo {
+      margin-bottom: auto; } }
+  .navigation__hammer, .navigation__sound {
+    width: 4rem;
+    height: 4rem; }
+  .navigation__menu {
+    display: none; }
+    @media only screen and (min-width: 43.75em) {
+      .navigation__menu {
+        display: flex !important;
+        flex-direction: column; } }
+    @media only screen and (max-width: 43.75em) {
+      .navigation__menu {
+        margin: 0 auto;
+        padding: 1rem 0;
+        width: 100%; } }
+  .navigation__users {
+    align-self: flex-end;
+    margin-right: 2rem; }
+    @media only screen and (max-width: 43.75em) {
+      .navigation__users {
+        margin-bottom: 5rem;
+        margin-right: 7rem;
+        text-align: right; } }
+  .navigation__search {
+    font-size: 1.8rem;
+    color: #901c08;
+    margin: 0 3rem;
+    cursor: pointer;
+    transition: color .2s ease; }
+    .navigation__search:hover {
+      color: #FAFAFA; }
+  .navigation__signIn:link, .navigation__signIn:visited {
+    text-decoration: none;
+    color: #9e9e9e;
+    font-family: "Rajdhani", sans-serif;
+    font-size: 1.5rem;
+    transition: color .2s ease; }
+  .navigation__signIn:hover {
+    color: #FAFAFA; }
+  .navigation__slash {
+    font-size: 2rem;
+    color: #901c08;
+    margin: 0 1rem; }
+  .navigation__join:link, .navigation__join:visited {
+    text-decoration: none;
+    color: #9e9e9e;
+    font-family: "Rajdhani", sans-serif;
+    font-size: 1.5rem;
+    transition: color .2s ease; }
+  .navigation__join:hover {
+    color: #FAFAFA; }
   .navigation__list {
     list-style: none;
     display: flex;
     justify-content: space-between; }
+    @media only screen and (max-width: 43.75em) {
+      .navigation__list {
+        flex-direction: column;
+        margin-left: -7rem; } }
   .navigation__item {
     margin: auto 2rem; }
+    @media only screen and (max-width: 43.75em) {
+      .navigation__item {
+        margin: 1rem auto;
+        text-align: center; } }
   .navigation__link:link, .navigation__link:visited {
     text-decoration: none;
     color: #FAFAFA;
     font-family: "Cormorant Unicase", serif;
-    font-size: 2.5rem; }
+    font-size: 2.5rem;
+    transition: color .2s ease; }
+  .navigation__link:hover {
+    color: #af8640; }
+  .navigation__mobile {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 5rem;
+    width: 5rem; }
+    @media only screen and (max-width: 43.75em) {
+      .navigation__mobile {
+        display: block; } }
+
+#nav-toggle {
+  position: absolute;
+  left: 0;
+  top: 2rem;
+  cursor: pointer;
+  padding: 1rem 3.5rem 1.5rem 0; }
+  #nav-toggle span,
+  #nav-toggle span::before,
+  #nav-toggle span::after {
+    cursor: pointer;
+    height: 2px;
+    width: 4rem;
+    background: #FAFAFA;
+    position: absolute;
+    display: block;
+    content: '';
+    transition: transform .3s ease-in-out, hover .3s ease; }
+  #nav-toggle span::before {
+    top: -1rem; }
+  #nav-toggle span::after {
+    bottom: -1rem; }
+  #nav-toggle:hover span::before {
+    top: -1.2rem; }
+  #nav-toggle:hover span::after {
+    top: 1.2rem; }
+  #nav-toggle.active span {
+    background-color: transparent; }
+    #nav-toggle.active span::before, #nav-toggle.active span::after {
+      top: 0;
+      height: 2px; }
+    #nav-toggle.active span::before {
+      transform: rotate(135deg); }
+    #nav-toggle.active span::after {
+      transform: rotate(-135deg); }
 
 .products {
   background-color: #FAFAFA;

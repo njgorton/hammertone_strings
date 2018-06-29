@@ -18,17 +18,30 @@
 <!-- =============================HEADER================================== -->
     <header class="header" id="header">
         <nav class="navigation" id="nav-bar">
-            <div class="navigation__logo" tabindex="0">
+            <a class="navigation__logo" href="#header" id="section-header">
                 <img src="img/hammer.svg" class="navigation__hammer">
                 <img src="img/audio-wave.svg" class="navigation__sound">
-            </div> 
+            </a> 
 
-            <ul class="navigation__list">
-                <li class="navigation__item"><a href="#" class="navigation__link nav-link">Store</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link nav-link">Custom Order</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link nav-link">Demos</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link nav-link">VIP's</a></li>
-            </ul>
+            <div class="navigation__menu">
+                <div class="navigation__users">
+                    <i class="fas fa-search navigation__search" tabindex="0"></i>
+                    <a href="#" class="navigation__signIn">Sign In</a>
+                    <span class="navigation__slash">/</span>
+                    <a href="#" class="navigation__join">Join</a>
+                </div>
+   
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#store" id="section-store" class="navigation__link nav-link">Store</a></li>
+                    <li class="navigation__item"><a href="#custom" id="section-custom" class="navigation__link nav-link">Custom Order</a></li>
+                    <li class="navigation__item"><a href="#demos" id="section-demos" class="navigation__link nav-link">Demos</a></li>
+                    <li class="navigation__item"><a href="#vip" id="section-vip" class="navigation__link nav-link">VIP's</a></li>
+                </ul>
+            </div>
+
+            <div class="navigation__mobile">
+                <a id="nav-toggle" href="#!"><span></span></a>
+            </div>
         </nav>
 
         <div class="header__title">
@@ -54,7 +67,7 @@
 
 <!-- =============================PRODUCTS================================ --> 
     <main>
-        <section class="products">
+        <section class="products" id="store">
             <h2 class="products__heading-primary">What's Your Sound?</h2>
             <h3 class="products__heading-secondary">Browse, compare, and explore our full product line</h3>
             <hr class="products__hr">
@@ -119,7 +132,7 @@
         </section>
 
 <!-- =============================CUSTOM================================== -->
-        <section class="custom">
+        <section class="custom" id="custom">
             <div class="custom__orders-container">
                 <div class="custom__gallery">
                     <figure class="custom__galleryItem custom__galleryItem--1">
@@ -220,7 +233,7 @@
 
 
 <!-- =============================DEMOS=================================== -->
-        <section class="demos">
+        <section class="demos" id="demos">
             <div class="demos__heading">
                 <h2>Demos</h2>
                 <hr>
@@ -288,7 +301,7 @@
 
 
 <!-- =============================VIP's=================================== -->
-        <section class="vip">
+        <section class="vip" id="vip">
             <div class="vip__heading">
                 <h2>Become a <span>Hammertone</span> Insider</h2>
                 <h3>Sign up for VIP access to special offers, prizes, and giveaways you won't get anywhere else!</h3>  
@@ -398,6 +411,6 @@
     <script src="app.js"></script>
 
     <!-- For FCC's User Story Test Suite: -->
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
 </body>
 </html>
