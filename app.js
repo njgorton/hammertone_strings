@@ -16,9 +16,9 @@ $('document').ready(function() {
 
 //==============================NAV SCROLLING==================================
 // HOME
-$("#section-header").click(function() {  
+$("#section-home").click(function() {  
     $('html, body').animate({
-      scrollTop: $("#header").offset().top-60
+      scrollTop: $("#home").offset().top-60
     }, 1000);
     target.focus(); // Setting focus
     if (target.is(":focus")){ // Checking if the target was focused
