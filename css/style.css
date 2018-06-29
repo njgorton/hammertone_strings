@@ -352,7 +352,8 @@ body {
 .footer {
   background-color: #23201a;
   color: #9e9e9e;
-  padding: 7rem 5rem 0 5rem;
+  padding: 5rem;
+  padding-top: 7rem;
   height: 100%; }
   .footer__iconBox {
     margin: 0 auto;
@@ -471,8 +472,8 @@ body {
     font-size: 1.8rem;
     text-align: center;
     line-height: 1.5;
-    margin: 2rem auto;
-    margin-bottom: 5rem;
+    margin: 0 auto;
+    margin-top: 2rem;
     width: 80%; }
     .footer__copyright span {
       font-family: "Cormorant Unicase", serif;
@@ -829,7 +830,6 @@ body {
 .card {
   display: flex;
   flex-direction: column;
-  align-items: center;
   background: #EAE5DE;
   box-shadow: 1.5rem 1.5rem 2rem rgba(0, 0, 0, 0.2);
   border-radius: 10px;
